@@ -1,0 +1,58 @@
+/* Larger screens */
+
+  .card { 
+    max-width: 100%;
+  }
+
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: .5rem 3rem;
+  }
+
+  #header .navbar-container ul { margin-bottom: 0; }
+
+/* Top Container */
+  #top-container { grid-template-columns: repeat(2, 1fr); }
+
+  #top-container .profile-pic { width: 60%; }
+
+  /* Origin Container */
+  #origin-story .origin-container {
+    grid-template-areas: 
+    'creation creation'
+    'par-1 par-1'
+    'par-2 par-2'
+    'baby-pic wild-hare-pic';
+  }
+
+  #origin-story .origin-container .creation {     
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #origin-story .origin-container .par-1,
+  #origin-story .origin-container .par-2 {
+    justify-self: center; 
+    align-self: center;
+  }
+
+  #origin-story .origin-container .baby-pic {
+    width: 40%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #origin-story .origin-container .wild-hare-pic { 
+    width: 87%;
+    justify-self: left;
+    align-self: center;
+  }
+  
+  /* Contact */
+  #contact .form-group {
+    max-width: 70%;
+    margin: 0 auto;
+  }
